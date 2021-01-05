@@ -20,9 +20,11 @@ def home():
   return render_template('index.html')
 
 '''
-sudo docker build . --tag gcr.io/ryan-gcp/clock-weather
+gcloud builds submit --tag gcr.io/ryan-cicd/test-run
 
-PORT=8080 && sudo docker run -p 9090:${PORT} -e PORT=${PORT} gcr.io/ryan-gcp/clock-weather
+sudo docker build . --tag gcr.io/ryan-cicd/test-run
+
+PORT=8080 && sudo docker run -p 9090:${PORT} -e PORT=${PORT} gcr.io/ryan-cicd/test-run
 '''
 
 if __name__ == "__main__":
