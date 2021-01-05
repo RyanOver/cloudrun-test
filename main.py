@@ -1,13 +1,4 @@
 from flask import Flask, render_template
-import sys
-import time
-import requests
-import json
-# import pytemperature
-import threading
-# import googlemaps
-from datetime import datetime
-import pprint
 import os
 
 app = Flask(__name__)
@@ -20,11 +11,13 @@ def home():
   return render_template('index.html')
 
 '''
-gcloud builds submit --tag gcr.io/ryan-cicd/test-run
+gcloud builds submit --tag gcr.io/PROJECT-ID/test-run
 
-sudo docker build . --tag gcr.io/ryan-cicd/test-run
+to test locally
 
-PORT=8080 && sudo docker run -p 9090:${PORT} -e PORT=${PORT} gcr.io/ryan-cicd/test-run
+sudo docker build . --tag gcr.io/PROJECT-ID/test-run
+
+PORT=8080 && sudo docker run -p 9090:${PORT} -e PORT=${PORT} gcr.io/PROJECT-ID/test-run
 '''
 
 if __name__ == "__main__":

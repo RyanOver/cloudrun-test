@@ -40,7 +40,7 @@ function displayTime() {
 let forecast = document.querySelector('#weather')
 
 let api_id_key = 'cc6566b18fb703c7c5f1928bd738a82c'
-let weather_url = `http://api.openweathermap.org/data/2.5/weather?q=Montreal&appid=${api_id_key}&units=metric`
+let weather_url = `https://api.openweathermap.org/data/2.5/weather?q=Montreal&appid=${api_id_key}&units=metric`
 
 async function getWeather() 
 {
@@ -58,11 +58,6 @@ let weatherData = getWeather()
       let b = forecast.innerHTML = `${temp}&#176;  ${desc}`;
     }).catch(console.error);
 
-
-// let description = getWeather()
-//   .then(data => {
-//       let desc = data.weather[0].description;
-//     }).catch(console.error);
 
 // https://cloud.google.com/translate/docs/reference/rest/v2/translate
 // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch 
