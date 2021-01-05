@@ -20,6 +20,8 @@ def home():
   return render_template('index.html')
 
 '''
+gcloud builds submit --tag gcr.io/ryan-cicd/test-run
+
 sudo docker build . --tag gcr.io/ryan-cicd/test-run
 
 PORT=8080 && sudo docker run -p 9090:${PORT} -e PORT=${PORT} gcr.io/ryan-cicd/test-run
