@@ -64,30 +64,5 @@ let weatherData = getWeather()
 //       let desc = data.weather[0].description;
 //     }).catch(console.error);
 
-// const translate_url = 'https://translation.googleapis.com/language/translate/v2'
-// const gcp_api_key = 'AIzaSyCQtCLdACbVqhQctbD7_XU2lx0v5qDUD-g'
-// let data = {'q':`${description}`, 'target':'fr', 'source':'en', 'key':`${gcp_api_key}`}
-
-// async function translate(url=translate_url, params=data){
-//     const resp = await fetch(url, {
-//         method: 'POST',
-//         mode: 'cors',
-//         cache: 'no-cache',
-//         credentials: 'same-origin',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify(params)
-//     })
-//     let data = await resp.json()
-//     return data;
-// }
-
-// translate(translate_url, data)
-// .then(data => {
-//     console.log(data)
-// })
-// .catch(error => console.error(err))
-
 // https://cloud.google.com/translate/docs/reference/rest/v2/translate
 // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch 
