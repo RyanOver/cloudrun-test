@@ -13,7 +13,7 @@ def home():
 '''
 gcloud builds submit --tag gcr.io/PROJECT-ID/test-run
 
-to test locally
+to test locally 
 
 sudo docker build . --tag gcr.io/PROJECT-ID/test-run
 
